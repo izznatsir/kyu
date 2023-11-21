@@ -1,0 +1,36 @@
+{
+	"name": "kyu",
+	"version": "0.1.0",
+	"description": "A SQLite migration tool and query builder for JavaScript runtimes.",
+	"keywords": [
+		"d1",
+		"javascript",
+		"migration",
+		"query",
+		"sqlite",
+		"turso",
+		"typescript"
+	],
+	"license": "MIT",
+	"author": {
+		"name": "Izzuddin Natsir"
+	},
+	"files": [
+		"dist",
+		"src"
+	],
+	"type": "module",
+	"bin": "./dist/bin.js",
+	"exports": {
+		".": {
+			"default": "./dits/index.js",
+			"import": "./dits/index.js",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"scripts": {
+		"build": "tsup",
+		"test": "vitest run",
+		"test:coverage": "vitest run --coverage"
+	}
+}

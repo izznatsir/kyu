@@ -1,6 +1,6 @@
 # kyu
 
-A SQLite migration manager and query builder for JavaScript runtimes.
+A SQLite migration tool and query builder for JavaScript runtimes.
 
 ## Goals
 
