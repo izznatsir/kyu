@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"lib": ["esnext"],
+		"module": "nodenext",
+		"moduleResolution": "nodenext",
+		"paths": {
+			"~/*": ["./src/*"]
+		},
+		"target": "esnext"
+	},
+	"extends": ["../../tsconfig.base.json"],
+	"include": ["**/*.ts"]
+}
