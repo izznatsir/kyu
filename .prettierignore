@@ -1,0 +1,17 @@
+.yarn
+
+# .gitignore
+
+**/.cahce
+**/.DS_Store
+**/.dev.vars
+**/.env
+**/.env.local
+**/.env.production
+**/coverages
+**/build
+**/dist
+**/logs
+**/node_modules
+**/*.db
+**/*.log

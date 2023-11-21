@@ -1,0 +1,42 @@
+{
+	"private": true,
+	"workspaces": [
+		"packages/*"
+	],
+	"type": "module",
+	"scripts": {
+		"format": "prettier -uw .",
+		"prepare": "husky install"
+	},
+	"devDependencies": {
+		"husky": "^8.0.0",
+		"lint-staged": "^15.1.0",
+		"prettier": "^3.1.0",
+		"typescript": "^5.3.2"
+	},
+	"prettier": {
+		"overrides": [
+			{
+				"files": [
+					"*.md",
+					"*.yml",
+					"*.yaml"
+				],
+				"options": {
+					"tabWidth": 2
+				}
+			}
+		],
+		"tabWidth": 4,
+		"useTabs": true
+	},
+	"lint-staged": {
+		"*": [
+			"prettier -uw"
+		]
+	},
+	"engines": {
+		"node": ">=20.0.0"
+	},
+	"packageManager": "yarn@4.0.2"
+}
